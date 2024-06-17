@@ -1,0 +1,72 @@
+Schema : Customer
+Attributes : [id, name, phone, email, vehicle_no, running_km]
+
+1) API FOR LISTING ALL CUSTOMER DETAILS ->
+
+   url : http://127.0.0.1:8000/api/customers/
+   method : get
+   body : nill
+   authorization : nill
+   status : completed
+
+2) API FOR ADDING NEW CUSTOMER DETAILS ->
+
+   url : http://127.0.0.1:8000/api/customers/
+   method : post
+
+   body : {
+    name: "customer_name",
+    phone: "customer phone number",
+    email: "customer email",
+    vehicle_no: "customer vehicle no.",
+    running_km: "customer vehicle running_km"
+   }
+
+   authorization : nill
+   status : completed
+
+3) API FOR FETCHING CUSTOMER DETAIL->
+
+   url : http://127.0.0.1:8000/api/customers/{id}/
+   method : get
+   body : nill
+   authorization : nill
+   status : completed
+
+4) API FOR UPDATING CUSTOMER DETAIL->
+
+   url : http://127.0.0.1:8000/api/customers/{id}/
+   method : post
+   
+   body : {
+    name: "customer_name",
+    phone: "customer phone number",
+    email: "customer email",
+    vehicle_no: "customer vehicle no.",
+    running_km: "customer vehicle running_km"
+   }
+
+   authorization : nill
+   status : completed
+
+5) API FOR DELETING CUSTOMER->
+
+   url : http://127.0.0.1:8000/api/customers/{id}/
+   method : delete
+   body : nill
+   authorization : nill
+   status : completed
+
+6) API FOR FETCHING TOKEN->
+
+   url : http://127.0.0.1:8000/api/token/
+   method : post
+   body : {username, password}
+   authorization : nill
+
+7) API FOR FETCHING ACCESS TOKEN BY PASSING REFRESH TOKEN->
+
+   url : http://127.0.0.1:8000/api/token/refresh/
+   method : post
+   body : {refresh_token}
+   authorization : nill
